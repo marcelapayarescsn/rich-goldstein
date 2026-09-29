@@ -3,89 +3,96 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Goldstein Patent Law · Demos</title>
+<title>Goldstein Patent Law &middot; Demos</title>
 <meta name="description" content="Index of demo pages prepared by C-Suite Network for Goldstein Patent Law.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --paper:#ffffff; --surface:#f6f3ee; --line:#e3ddd0; --line-strong:#cdc4b0;
-    --ink:#495059; --ink-soft:#7c828c; --ink-faint:#a6aab1;
-    --gold:#c8a668; --orange:#f78945; --orange-dark:#e0722e; --orange-soft: rgba(247,137,69,0.12);
-    color-scheme: light;
-  }
-  *{ box-sizing:border-box; }
-  body{
-    margin:0; background: var(--paper); color: var(--ink);
-    font-family:'Montserrat', ui-sans-serif, system-ui, sans-serif;
-  }
-  .wrap{ max-width: 860px; margin: 0 auto; padding: 0 20px 60px; }
-  .site-header{ border-bottom: 1px solid var(--line); padding: 22px 0; margin-bottom: 40px; }
-  .brand{ display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit; }
-  .mark{ width:34px; height:34px; position:relative; flex:none; }
-  .mark i{ position:absolute; width:22px; height:22px; border: 2px solid var(--gold); transform: rotate(45deg); }
-  .mark i:first-child{ top:0; left:6px; }
-  .mark i:last-child{ top:9px; left:-3px; border-color: var(--orange); opacity:.85; }
-  .wordmark .name{ font-weight:600; font-size: 19px; letter-spacing: 2.5px; color: var(--ink); }
-  .wordmark .tag{ font-size: 10.5px; letter-spacing: 2px; text-transform:uppercase; color: var(--ink-faint); }
-  .eyebrow{ font-size: 11.5px; letter-spacing: 2px; text-transform:uppercase; color: var(--orange); font-weight:600; margin-bottom: 10px; }
-  h1{ font-weight: 300; font-size: clamp(24px, 4vw, 34px); line-height:1.2; margin: 0 0 12px; }
-  .sub{ color: var(--ink-soft); font-size: 14px; line-height:1.65; max-width: 65ch; margin:0 0 34px; }
-  .list{ display:flex; flex-direction:column; gap:14px; }
-  .item{
-    display:flex; align-items:center; justify-content:space-between; gap:16px;
-    border: 1px solid var(--line); padding: 18px 20px; text-decoration:none; color:inherit;
-    transition: border-color .15s ease, background .15s ease;
-  }
-  .item:hover{ border-color: var(--orange); background: var(--orange-soft); }
-  .item-name{ font-size:15px; font-weight:600; color: var(--ink); margin:0 0 4px; }
-  .item-desc{ font-size:12.5px; color: var(--ink-soft); margin:0; }
-  .item-go{ color: var(--orange-dark); font-weight:700; font-size:13px; white-space:nowrap; }
-  .footnote{ margin-top: 50px; padding-top:18px; border-top:1px solid var(--line); font-size:12px; color: var(--ink-faint); }
+:root{
+--paper:#ffffff; --surface:#f6f3ee; --line:#e3ddd0; --line-strong:#cdc4b0;
+--ink:#495059; --ink-soft:#7c828c; --ink-faint:#a6aab1;
+--gold:#c8a668; --orange:#f78945; --orange-dark:#e0722e; --orange-soft: rgba(247,137,69,0.12);
+color-scheme: light;
+}
+*{ box-sizing:border-box; }
+body{
+margin:0; background: var(--paper); color: var(--ink);
+font-family:'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+.wrap{ max-width: 860px; margin: 0 auto; padding: 0 20px 60px; }
+.site-header{ border-bottom: 1px solid var(--line); padding: 22px 0; margin-bottom: 40px; }
+.brand{ display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit; }
+.mark{ width:34px; height:34px; position:relative; flex:none; }
+.mark i{ position:absolute; width:22px; height:22px; border: 2px solid var(--gold); transform: rotate(45deg); }
+.mark i:first-child{ top:0; left:6px; }
+.mark i:last-child{ top:9px; left:-3px; border-color: var(--orange); opacity:.85; }
+.wordmark .name{ font-weight:600; font-size: 19px; letter-spacing: 2.5px; color: var(--ink); }
+.wordmark .tag{ font-size: 10.5px; letter-spacing: 2px; text-transform:uppercase; color: var(--ink-faint); }
+.eyebrow{ font-size: 11.5px; letter-spacing: 2px; text-transform:uppercase; color: var(--orange); font-weight:600; margin-bottom: 10px; }
+h1{ font-weight: 300; font-size: clamp(24px, 4vw, 34px); line-height:1.2; margin: 0 0 12px; }
+.sub{ color: var(--ink-soft); font-size: 14px; line-height:1.65; max-width: 65ch; margin:0 0 34px; }
+.list{ display:flex; flex-direction:column; gap:14px; }
+.item{
+display:flex; align-items:center; justify-content:space-between; gap:16px;
+border: 1px solid var(--line); padding: 18px 20px; text-decoration:none; color:inherit;
+transition: border-color .15s ease, background .15s ease;
+}
+.item:hover{ border-color: var(--orange); background: var(--orange-soft); }
+.item-name{ font-size:15px; font-weight:600; color: var(--ink); margin:0 0 4px; }
+.item-desc{ font-size:12.5px; color: var(--ink-soft); margin:0; }
+.item-go{ color: var(--orange-dark); font-weight:700; font-size:13px; white-space:nowrap; }
+.footnote{ margin-top: 50px; padding-top:18px; border-top:1px solid var(--line); font-size:12px; color: var(--ink-faint); }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header class="site-header">
-    <a class="brand" href="./">
-      <div class="mark"><i></i><i></i></div>
-      <div class="wordmark">
-        <div class="name">GOLDSTEIN</div>
-        <div class="tag">Intellectual Property</div>
-      </div>
-    </a>
-  </header>
+<header class="site-header">
+<a class="brand" href="./">
+<div class="mark"><i></i><i></i></div>
+<div class="wordmark">
+<div class="name">GOLDSTEIN</div>
+<div class="tag">Intellectual Property</div>
+</div>
+</a>
+</header>
 
-  <div class="eyebrow">Prepared by C-Suite Network</div>
-  <h1>Demo pages</h1>
-  <p class="sub">Prototypes and work-in-progress pages prepared for Goldstein Patent Law.</p>
+<div class="eyebrow">Prepared by C-Suite Network</div>
+<h1>Demo pages</h1>
+<p class="sub">Prototypes and work-in-progress pages prepared for Goldstein Patent Law.</p>
 
-  <div class="list">
-    <a class="item" href="funnel-simulator/">
-      <div>
-        <p class="item-name">Funnel Simulator</p>
-        <p class="item-desc">Side-by-side comparison: how it captures an email today vs. the recommended model with quiz + gate.</p>
-      </div>
-      <span class="item-go">View &rarr;</span>
-    </a>
-    <a class="item" href="content-pipeline-map/">
-      <div>
-        <p class="item-name">Content Pipeline Map</p>
-        <p class="item-desc">From raw assets to the seven content output lanes.</p>
-      </div>
-      <span class="item-go">View &rarr;</span>
-    </a>
-    <a class="item" href="https://marcelapayarescsn.github.io/goldstein-hero-club/">
-      <div>
-        <p class="item-name">Hero Club Workshop Outline</p>
-        <p class="item-desc">The Power Equation, table-format workshop draft for the November Hero Club session.</p>
-      </div>
-      <span class="item-go">View &rarr;</span>
-    </a>
-  </div>
+<div class="list">
+<a class="item" href="organigram/">
+<div>
+<p class="item-name">Organigram</p>
+<p class="item-desc">The Goldstein Patent Law engagement team, both sides, with a confidence ledger for every role.</p>
+</div>
+<span class="item-go">View &rarr;</span>
+</a>
+<a class="item" href="funnel-simulator/">
+<div>
+<p class="item-name">Funnel Simulator</p>
+<p class="item-desc">Side-by-side comparison: how it captures an email today vs. the recommended model with quiz + gate.</p>
+</div>
+<span class="item-go">View &rarr;</span>
+</a>
+<a class="item" href="content-pipeline-map/">
+<div>
+<p class="item-name">Content Pipeline Map</p>
+<p class="item-desc">From raw assets to the seven content output lanes.</p>
+</div>
+<span class="item-go">View &rarr;</span>
+</a>
+<a class="item" href="https://marcelapayarescsn.github.io/goldstein-hero-club/">
+<div>
+<p class="item-name">Hero Club Workshop Outline</p>
+<p class="item-desc">The Power Equation, table-format workshop draft for the November Hero Club session.</p>
+</div>
+<span class="item-go">View &rarr;</span>
+</a>
+</div>
 
-  <div class="footnote">C-Suite Network &middot; client folder: Goldstein Patent Law</div>
+<div class="footnote">C-Suite Network &middot; client folder: Goldstein Patent Law</div>
 </div>
 </body>
 </html>
